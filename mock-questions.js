@@ -1,0 +1,1091 @@
+/* Adapted from the user-supplied mock test. Original wording retained for audit. */
+const MOCK_QUESTIONS=[
+  {
+    "id": "mock-01",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which of the following is a biological hazard?",
+    "choices": [
+      "Salmonella bacteria",
+      "Broken glass",
+      "Cleaning detergent",
+      "Plastic pieces"
+    ],
+    "answer": 0,
+    "explanation": "Biological hazards include harmful microorganisms.",
+    "sourceSection": "1.6; 3.4.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 1,
+    "originalQuestion": "Which of the following is a biological hazard?",
+    "originalChoices": [
+      "Broken glass",
+      "Cleaning detergent",
+      "Salmonella bacteria (Germs/ Pathogens are biological hazards.)",
+      "Plastic pieces"
+    ],
+    "originalAnswerIndex": 2,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-1.jpeg",
+    "fallbackImageId": "temperature-06"
+  },
+  {
+    "id": "mock-02",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What is a physical hazard in food?",
+    "choices": [
+      "Hair or metal pieces",
+      "Bacteria",
+      "Detergent",
+      "Mold"
+    ],
+    "answer": 0,
+    "explanation": "Physical hazards are foreign objects that may injure someone.",
+    "sourceSection": "1.6; 3.4.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 2,
+    "originalQuestion": "What is a physical hazard in food?",
+    "originalChoices": [
+      "Hair or metal pieces (objects can cause injury or choking.)",
+      "Bacteria",
+      "Detergent",
+      "Mold"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-2.jpeg",
+    "fallbackImageId": "service-04"
+  },
+  {
+    "id": "mock-03",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which of the following is a chemical hazard?",
+    "choices": [
+      "Pesticide residue",
+      "Nail clipping",
+      "Dust",
+      "Flour"
+    ],
+    "answer": 0,
+    "explanation": "Chemicals such as pesticide residues can contaminate food.",
+    "sourceSection": "1.6; 3.4.2; 4.5",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 3,
+    "originalQuestion": "Which of the following is a chemical hazard?",
+    "originalChoices": [
+      "Nail clipping",
+      "Pesticide residue (cleaning agents or pesticides)",
+      "Dust",
+      "Flour"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-3.jpeg",
+    "fallbackImageId": "cleaning-04"
+  },
+  {
+    "id": "mock-04",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Why should food handlers avoid wearing jewellery?",
+    "choices": [
+      "It can fall into food or trap dirt and bacteria",
+      "It looks unprofessional",
+      "It slows down work",
+      "It makes the uniform untidy"
+    ],
+    "answer": 0,
+    "explanation": "Jewellery may carry dirt or fall into food.",
+    "sourceSection": "5.3",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 4,
+    "originalQuestion": "Why should food handlers avoid wearing jewellery?",
+    "originalChoices": [
+      "It can fall into food or trap dirt and bacteria",
+      "It looks unprofessional",
+      "It slows down work",
+      "It makes the uniform untidy"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-4.jpeg",
+    "fallbackImageId": "hygiene-07"
+  },
+  {
+    "id": "mock-05",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which ready-to-eat food needs temperature control?",
+    "choices": [
+      "Cooked chicken",
+      "Dry uncooked rice",
+      "Crackers",
+      "Dry flour"
+    ],
+    "answer": 0,
+    "explanation": "Cooked chicken is a ready-to-eat food that needs temperature control. Raw chicken also needs safe handling, but the Code defines high-risk foods as ready-to-eat foods that support bacterial growth or toxins.",
+    "sourceSection": "1.6; 3.2.3.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 5,
+    "originalQuestion": "Which of the following is high-risk food?",
+    "originalChoices": [
+      "Rice",
+      "Raw chicken",
+      "Crackers",
+      "Flour"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Replaced ambiguous rice/raw-chicken comparison with cooked chicken, matching the Code definition of high-risk ready-to-eat food.",
+    "image": "images/mock-test/question-5.png",
+    "fallbackImageId": "cooking-01"
+  },
+  {
+    "id": "mock-06",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which practice prevents (stops) cross-contamination?",
+    "choices": [
+      "Use separate chopping boards for raw and cooked food",
+      "Defrost food on the counter",
+      "Use the same knife for all items",
+      "Taste food with fingers"
+    ],
+    "answer": 0,
+    "explanation": "Keep raw and ready-to-eat equipment separate.",
+    "sourceSection": "3.4.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 6,
+    "originalQuestion": "Which practice prevents (stops) cross-contamination?",
+    "originalChoices": [
+      "Use separate chopping boards for raw and cooked food",
+      "Defrost food on the counter",
+      "Use the same knife for all items",
+      "Taste food with fingers"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-6.png",
+    "fallbackImageId": "separate-03"
+  },
+  {
+    "id": "mock-07",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "The danger zone for bacterial growth is between:",
+    "choices": [
+      "5 – 60 °C",
+      "0 – 5 °C",
+      "60 – 75 °C",
+      "75 – 100 °C"
+    ],
+    "answer": 0,
+    "explanation": "Control food time between cold and hot holding.",
+    "sourceSection": "3.2.3.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 7,
+    "originalQuestion": "The danger zone for bacterial growth is between:",
+    "originalChoices": [
+      "0 – 5 °C",
+      "5 – 60 °C",
+      "60 – 75 °C",
+      "75 – 100 °C"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-7.png",
+    "fallbackImageId": "temperature-06"
+  },
+  {
+    "id": "mock-08",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "I switch from raw meat to cooked ready-to-eat food. When do I wash hands?",
+    "choices": [
+      "After raw meat, before cooked food",
+      "Only before my shift",
+      "Only at the end of the day",
+      "Only after the cooked food"
+    ],
+    "answer": 0,
+    "explanation": "Wash hands when changing from raw meat to ready-to-eat food.",
+    "sourceSection": "5.3",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 8,
+    "originalQuestion": "When should food handlers wash their hands?",
+    "originalChoices": [
+      "After touching raw meat and before touching cooked food",
+      "Before sitting to eat",
+      "Only at the end of the day",
+      "After handling clean plates"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Narrowed the question because washing before eating is also a valid hygiene action.",
+    "image": "images/mock-test/question-8.jpeg",
+    "fallbackImageId": "hands-02"
+  },
+  {
+    "id": "mock-09",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "How long should I scrub my hands with soap at a minimum?",
+    "choices": [
+      "20 seconds",
+      "5 seconds",
+      "40 seconds",
+      "1 minute"
+    ],
+    "answer": 0,
+    "explanation": "Scrub with soap for at least 20 seconds, then rinse and dry.",
+    "sourceSection": "CDC handwashing guidance",
+    "sourceUrl": "https://www.cdc.gov/clean-hands/about/",
+    "sourceTitle": "CDC handwashing guidance",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 9,
+    "originalQuestion": "What is the minimum time for proper handwashing?",
+    "originalChoices": [
+      "5 seconds",
+      "20 seconds",
+      "40 seconds",
+      "1 minute"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Clarified that 20 seconds refers to scrubbing, not the complete wet/soap/rinse/dry routine. CDC is the verification source.",
+    "image": "images/mock-test/question-9.png",
+    "fallbackImageId": "hands-01"
+  },
+  {
+    "id": "mock-10",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What should you do if you have diarrhea or vomiting?",
+    "choices": [
+      "Inform your supervisor and stay away from food work",
+      "Take medicine and continue working",
+      "Wear gloves",
+      "Wash hands more often"
+    ],
+    "answer": 0,
+    "explanation": "Stop food work and report vomiting or diarrhoea.",
+    "sourceSection": "5.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 10,
+    "originalQuestion": "What should you do if you have diarrhea or vomiting?",
+    "originalChoices": [
+      "Inform your supervisor and stay away from food work",
+      "Take medicine and continue working",
+      "Wear gloves",
+      "Wash hands more often"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-10.png",
+    "fallbackImageId": "illness-02"
+  },
+  {
+    "id": "mock-11",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What is the cold-holding limit for high-risk food?",
+    "choices": [
+      "5°C or below",
+      "10°C or below",
+      "15°C or below",
+      "20°C or below"
+    ],
+    "answer": 0,
+    "explanation": "High-risk food should be cold-held at 5°C or below.",
+    "sourceSection": "3.6.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 11,
+    "originalQuestion": "Food should be chilled below:",
+    "originalChoices": [
+      "10 °C",
+      "5 °C",
+      "15 °C",
+      "20 °C"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Changed below 5°C to 5°C or below.",
+    "image": "",
+    "fallbackImageId": "temperature-01"
+  },
+  {
+    "id": "mock-12",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What temperature is preferred for frozen-food storage quality?",
+    "choices": [
+      "–18 °C",
+      "0 °C",
+      "5 °C",
+      "10 °C"
+    ],
+    "answer": 0,
+    "explanation": "Minus 18°C or colder is preferred for frozen-food quality; follow the product storage requirements.",
+    "sourceSection": "3.2.3.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 12,
+    "originalQuestion": "Food should be frozen at or below:",
+    "originalChoices": [
+      "–18 °C",
+      "0 °C",
+      "5 °C",
+      "10 °C"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Clarified minus 18°C as a preferred frozen-storage quality target, rather than a definition of when all food freezes.",
+    "image": "",
+    "fallbackImageId": "temperature-08"
+  },
+  {
+    "id": "mock-13",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Hot-held food must be kept at:",
+    "choices": [
+      "60 °C or above",
+      "40 °C",
+      "45 °C",
+      "30 °C"
+    ],
+    "answer": 0,
+    "explanation": "Hold hot food at 60°C or above.",
+    "sourceSection": "3.2.10",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 13,
+    "originalQuestion": "Hot-held food must be kept at:",
+    "originalChoices": [
+      "40 °C",
+      "60 °C or above",
+      "45 °C",
+      "30 °C"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "temperature-02"
+  },
+  {
+    "id": "mock-14",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "When should I check and record fridge temperatures?",
+    "choices": [
+      "At the times required by the workplace monitoring schedule",
+      "Only once a week",
+      "Only if the fridge looks warm",
+      "Never"
+    ],
+    "answer": 0,
+    "explanation": "Check and record temperatures according to the workplace monitoring schedule. Report problems immediately.",
+    "sourceSection": "3.1.3.3; 3.6.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 14,
+    "originalQuestion": "How often should fridge temperatures be checked?",
+    "originalChoices": [
+      "At least once daily",
+      "Once a week",
+      "Only if it looks warm",
+      "Never"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Removed a universal once-daily claim; the workplace monitoring schedule determines frequency.",
+    "image": "",
+    "fallbackImageId": "temperature-07"
+  },
+  {
+    "id": "mock-15",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which order is correct for storing food in a fridge?",
+    "choices": [
+      "Protected cooked food above raw meat",
+      "Raw meat above ready-to-eat food",
+      "Ready-to-eat salad below raw meat",
+      "Any order is equally safe"
+    ],
+    "answer": 0,
+    "explanation": "Store protected ready-to-eat food above raw animal foods in a shared fridge.",
+    "sourceSection": "3.4.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 15,
+    "originalQuestion": "Which order is correct for storing food in a fridge?",
+    "originalChoices": [
+      "Raw meat above cooked food",
+      "Cooked food above raw meat",
+      "Vegetables above raw meat",
+      "It doesn’t matter"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Removed the second potentially correct answer about vegetables above meat; specified protected ready-to-eat food.",
+    "image": "",
+    "fallbackImageId": "separate-01"
+  },
+  {
+    "id": "mock-16",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which of the following is a sign of food spoilage?",
+    "choices": [
+      "Sour smell and slimy texture",
+      "Fresh smell",
+      "Firm texture",
+      "Normal colour"
+    ],
+    "answer": 0,
+    "explanation": "Spoilage signs mean food needs reporting. Normal smell or appearance does not prove food is safe.",
+    "sourceSection": "3.2.3.1; 3.6.5",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 16,
+    "originalQuestion": "Which of the following is a sign of food spoilage?",
+    "originalChoices": [
+      "Sour smell and slimy texture",
+      "Fresh smell",
+      "Firm texture",
+      "Normal colour"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "service-08"
+  },
+  {
+    "id": "mock-17",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "In an exceptional time-control procedure, how long may high-risk hot food for immediate consumption be between 5°C and 60°C?",
+    "choices": [
+      "Not more than 2 hours",
+      "5 hours",
+      "Overnight",
+      "1 day"
+    ],
+    "answer": 0,
+    "explanation": "This two-hour rule applies to high-risk hot food for immediate consumption in exceptional use of time instead of temperature control. It is not a blanket rule for all ready-to-eat food.",
+    "sourceSection": "3.3(a)",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 17,
+    "originalQuestion": "How long can ready-to-eat food be stored safely at room temperature?",
+    "originalChoices": [
+      "Not more than 2 hours",
+      "5 hours",
+      "Overnight",
+      "1 day"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Restricted the two-hour answer to Food Code section 3.3(a); cold food, cooling and other processes have different rules.",
+    "image": "",
+    "fallbackImageId": "temperature-05"
+  },
+  {
+    "id": "mock-18",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which food is low-risk?",
+    "choices": [
+      "Dried rice",
+      "Cooked meat",
+      "Milk",
+      "Egg salad"
+    ],
+    "answer": 0,
+    "explanation": "Dry uncooked rice is lower-risk than cooked moist foods, but must still be stored safely.",
+    "sourceSection": "1.6; 3.6.4",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 18,
+    "originalQuestion": "Which food is low-risk?",
+    "originalChoices": [
+      "Cooked meat",
+      "Dried rice",
+      "Milk",
+      "Egg salad"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "receiving-05"
+  },
+  {
+    "id": "mock-19",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "The safest way to defrost food is:",
+    "choices": [
+      "In the fridge",
+      "On the counter overnight",
+      "Under hot water",
+      "Next to a stove"
+    ],
+    "answer": 0,
+    "explanation": "Use controlled refrigerated thawing and keep drips contained.",
+    "sourceSection": "3.2.7",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 19,
+    "originalQuestion": "The safest way to defrost food is:",
+    "originalChoices": [
+      "On the counter overnight",
+      "In the fridge",
+      "Under hot water",
+      "Next to a stove"
+    ],
+    "originalAnswerIndex": 1,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "cooling-01"
+  },
+  {
+    "id": "mock-20",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Food deliveries should be rejected if:",
+    "choices": [
+      "Its temperature is outside the required safe holding limits",
+      "The boxes are correctly sealed",
+      "It has a readable valid label",
+      "It arrives in a suitable food vehicle"
+    ],
+    "answer": 0,
+    "explanation": "Check the correct hot or cold delivery limits before accepting food.",
+    "sourceSection": "3.2.3.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 20,
+    "originalQuestion": "Food deliveries should be rejected if:",
+    "originalChoices": [
+      "The temperature is above the safe limit",
+      "The driver is late",
+      "The boxes are sealed",
+      "It’s delivered in a van"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Specified outside hot/cold limits, rather than above a safe limit for every delivery.",
+    "image": "",
+    "fallbackImageId": "receiving-03"
+  },
+  {
+    "id": "mock-21",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What’s the difference between cleaning and sanitizing?",
+    "choices": [
+      "Cleaning removes dirt; sanitizing reduces harmful germs",
+      "Sanitizing removes all physical dirt",
+      "Cleaning alone always disinfects",
+      "They always mean the same thing"
+    ],
+    "answer": 0,
+    "explanation": "Cleaning removes dirt. Sanitizing or disinfection reduces harmful microbes to an acceptable level.",
+    "sourceSection": "1.6; 4.2.3",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 21,
+    "originalQuestion": "What’s the difference between cleaning and sanitizing?",
+    "originalChoices": [
+      "Cleaning removes dirt; sanitizing kills germs",
+      "Sanitizing removes dirt",
+      "Cleaning kills germs",
+      "Both mean the same"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Changed kills germs to reduces harmful germs; sanitizing is not sterilization.",
+    "image": "",
+    "fallbackImageId": "cleaning-02"
+  },
+  {
+    "id": "mock-22",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What should you do after cleaning and sanitizing equipment?",
+    "choices": [
+      "Allow it to air dry",
+      "Wipe it with a cloth",
+      "Rinse with dirty water",
+      "Use immediately without drying"
+    ],
+    "answer": 0,
+    "explanation": "Follow the product procedure, including any required rinsing, and allow equipment to air dry.",
+    "sourceSection": "4.2.3",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 22,
+    "originalQuestion": "What should you do after cleaning and sanitizing equipment?",
+    "originalChoices": [
+      "Allow it to air dry",
+      "Wipe it with a cloth",
+      "Rinse with dirty water",
+      "Use immediately without drying"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "cleaning-02"
+  },
+  {
+    "id": "mock-23",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Why should waste bins be covered?",
+    "choices": [
+      "To prevent pests and odour",
+      "To hide the waste",
+      "To make the kitchen tidy",
+      "To save space"
+    ],
+    "answer": 0,
+    "explanation": "Covered bins help protect against pests. Empty and clean them safely.",
+    "sourceSection": "2.14; 4.4",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 23,
+    "originalQuestion": "Why should waste bins be covered?",
+    "originalChoices": [
+      "To prevent pests and odour (smell)",
+      "To hide the waste",
+      "To make the kitchen tidy",
+      "To save space"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "pests-04"
+  },
+  {
+    "id": "mock-24",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Where should cleaning chemicals be stored?",
+    "choices": [
+      "Away from food and in labelled containers",
+      "Beside food preparation areas",
+      "In the fridge",
+      "Anywhere convenient"
+    ],
+    "answer": 0,
+    "explanation": "Keep labelled chemicals separate from food and utensils.",
+    "sourceSection": "4.5",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 24,
+    "originalQuestion": "Where should cleaning chemicals be stored?",
+    "originalChoices": [
+      "Away from food and in labelled containers",
+      "Beside food preparation areas",
+      "In the fridge",
+      "Anywhere convenient"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "cleaning-04"
+  },
+  {
+    "id": "mock-25",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Mops and cloths used for cleaning must be:",
+    "choices": [
+      "Washed and dried after use",
+      "Left wet overnight",
+      "Used for different areas without washing",
+      "Shared with food use"
+    ],
+    "answer": 0,
+    "explanation": "Keep cleaning tools clean, disinfected as appropriate, and dry between uses.",
+    "sourceSection": "4.2.5",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 25,
+    "originalQuestion": "Mops and cloths used for cleaning must be:",
+    "originalChoices": [
+      "Washed and dried after use",
+      "Left wet overnight",
+      "Used for different areas without washing",
+      "Shared with food use"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "cleaning-02"
+  },
+  {
+    "id": "mock-26",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which sign shows pest infestation?",
+    "choices": [
+      "Droppings, gnawed packets, or footprints",
+      "Clean shelves",
+      "Sealed containers",
+      "Shiny floors"
+    ],
+    "answer": 0,
+    "explanation": "Droppings and damaged packets can be signs of pests.",
+    "sourceSection": "4.4",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 26,
+    "originalQuestion": "Which sign shows pest infestation?",
+    "originalChoices": [
+      "Droppings, gnawed packets, or footprints",
+      "Clean shelves",
+      "Sealed containers",
+      "Shiny floors"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "pests-02"
+  },
+  {
+    "id": "mock-27",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "If you see a pest in the kitchen, you should:",
+    "choices": [
+      "Report it to the supervisor immediately",
+      "Kill it and ignore",
+      "Continue cooking",
+      "Leave the door open"
+    ],
+    "answer": 0,
+    "explanation": "Report pests promptly and protect food.",
+    "sourceSection": "4.4",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 27,
+    "originalQuestion": "If you see a pest in the kitchen, you should:",
+    "originalChoices": [
+      "Report it to the supervisor immediately",
+      "Kill it and ignore",
+      "Continue cooking",
+      "Leave the door open"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "pests-01"
+  },
+  {
+    "id": "mock-28",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Why is it important to seal gaps and cracks?",
+    "choices": [
+      "To prevent pest entry",
+      "To improve design",
+      "To reduce air flow",
+      "For decoration"
+    ],
+    "answer": 0,
+    "explanation": "Report gaps so they can be sealed and stop pest entry.",
+    "sourceSection": "4.4",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 28,
+    "originalQuestion": "Why is it important to seal gaps and cracks?",
+    "originalChoices": [
+      "To prevent pest entry",
+      "To improve design",
+      "To reduce air flow",
+      "For decoration"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "pests-06"
+  },
+  {
+    "id": "mock-29",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Food handlers must always:",
+    "choices": [
+      "Follow the Dubai Municipality Food Code",
+      "Make their own rules",
+      "Wait for inspection to clean",
+      "Ignore minor contamination"
+    ],
+    "answer": 0,
+    "explanation": "Follow applicable food safety requirements and approved workplace procedures.",
+    "sourceSection": "1.3; 6.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 29,
+    "originalQuestion": "Food handlers must always:",
+    "originalChoices": [
+      "Follow the Dubai Municipality Food Code",
+      "Make their own rules",
+      "Wait for inspection to clean",
+      "Ignore minor contamination"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "hygiene-08"
+  },
+  {
+    "id": "mock-30",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Who is responsible for overall food safety in a food business?",
+    "choices": [
+      "The Person in Charge (PIC) and EVERYONE",
+      "Only cleaners",
+      "Only chefs",
+      "Delivery drivers"
+    ],
+    "answer": 0,
+    "explanation": "The PIC leads food safety management; every worker must follow safe practices.",
+    "sourceSection": "3.1.1; 3.1.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 30,
+    "originalQuestion": "Who is responsible for overall food safety in a food business?",
+    "originalChoices": [
+      "The Person in Charge (PIC) and EVERYONE",
+      "Only cleaners",
+      "Only chefs",
+      "Delivery drivers"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "illness-08"
+  },
+  {
+    "id": "mock-31",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Which document must be kept for inspectors?",
+    "choices": [
+      "Temperature logs and cleaning records",
+      "Staff photos",
+      "Menu cards",
+      "Price list"
+    ],
+    "answer": 0,
+    "explanation": "Keep monitoring and cleaning records available for review.",
+    "sourceSection": "3.1.3.3; 4.2.6",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 31,
+    "originalQuestion": "Which document must be kept for inspectors?",
+    "originalChoices": [
+      "Temperature logs and cleaning records",
+      "Staff photos",
+      "Menu cards",
+      "Price list"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-31.jpeg",
+    "fallbackImageId": "receiving-08"
+  },
+  {
+    "id": "mock-32",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "Why is training important for food handlers?",
+    "choices": [
+      "It teaches correct hygiene and safety practices",
+      "It helps pass time",
+      "It’s optional",
+      "It’s only for managers"
+    ],
+    "answer": 0,
+    "explanation": "Training helps workers demonstrate safe food handling.",
+    "sourceSection": "6.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 32,
+    "originalQuestion": "Why is training important for food handlers?",
+    "originalChoices": [
+      "It teaches correct hygiene and safety practices",
+      "It helps pass time",
+      "It’s optional",
+      "It’s only for managers"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "hygiene-08"
+  },
+  {
+    "id": "mock-33",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What colour board is commonly used for raw meat?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "White"
+    ],
+    "answer": 0,
+    "explanation": "Red is commonly used for raw meat, but colours are not a universal mandatory rule. Follow the workplace board system.",
+    "sourceSection": "3.4.1",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 33,
+    "originalQuestion": "What colour board is commonly used for raw meat?",
+    "originalChoices": [
+      "Red",
+      "Blue",
+      "Green",
+      "White"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-33.png",
+    "fallbackImageId": "separate-03"
+  },
+  {
+    "id": "mock-34",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "What should be done if you drop food on the floor?",
+    "choices": [
+      "Discard it immediately",
+      "Pick it up and reuse",
+      "Wash it and serve",
+      "Ignore"
+    ],
+    "answer": 0,
+    "explanation": "Do not serve food that fell on the floor.",
+    "sourceSection": "3.4.2; 3.6.5",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 34,
+    "originalQuestion": "What should be done if you drop food on the floor?",
+    "originalChoices": [
+      "Discard it immediately",
+      "Pick it up and reuse",
+      "Wash it and serve",
+      "Ignore"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "images/mock-test/question-34.jpeg",
+    "fallbackImageId": "service-04"
+  },
+  {
+    "id": "mock-35",
+    "topic": "mock",
+    "icon": "📝",
+    "question": "The main purpose of food safety training is to:",
+    "choices": [
+      "Protect public health and prevent foodborne illness",
+      "Impress customers",
+      "Avoid fines",
+      "Save money"
+    ],
+    "answer": 0,
+    "explanation": "Food safety training helps protect people from illness.",
+    "sourceSection": "1.2; 6.2",
+    "sourceUrl": "https://dmpmedia.dm.gov.ae/uploads/2024/10/Food-Code-2013-English.pdf",
+    "sourceTitle": "Dubai Municipality Food Code",
+    "kind": "adapted-supplied-mock",
+    "sourceDocument": "Basic Food Safety Mock Test.docx",
+    "sourceQuestion": 35,
+    "originalQuestion": "The main purpose of food safety training is to:",
+    "originalChoices": [
+      "Protect public health and prevent foodborne illness",
+      "Impress customers",
+      "Avoid fines",
+      "Save money"
+    ],
+    "originalAnswerIndex": 0,
+    "adaptationNote": "Answer-key tick removed; wording and options retained apart from explanatory parentheses.",
+    "image": "",
+    "fallbackImageId": "hygiene-08"
+  }
+];
+QUESTION_TOPICS.push({id:"mock",name:"Your mock test",icon:"📝",rows:MOCK_QUESTIONS,section:"Supplied document"});
+QUESTION_BANK.push(...MOCK_QUESTIONS);
+for(const q of MOCK_QUESTIONS){QUESTION_ILLUSTRATIONS[q.id]=q.image?{src:q.image,full:true}:{...QUESTION_ILLUSTRATIONS[q.fallbackImageId]};}
